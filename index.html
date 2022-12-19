@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" media="(max-width:1000px)" href="./css/main(1000).css" />
+    <link rel="stylesheet" type="text/css" media="(max-width:800px)" href="./css/main(800).css" />
+    <link rel="stylesheet" type="text/css" media="(max-width:600px)" href="./css/main(600).css" />
+    <script src="./js/js.js"></script>
+    <script src="./js/js-ui.js"></script>
+    <script src="./js/main.js"></script>
     <title>사진온실</title>
 </head>
 <body>
@@ -13,66 +19,148 @@
         <!-- header -->
         <header id="header">
             <!-- logo -->
-            <div id="logo"></div>
+            <a href="index.html" id="logo"></a>
             <!-- nav -->
             <nav id="nav">
-                <ul>
-                    <li><a href="#">Story</a></li>
-                    <li><a href="#">Archiv</a></li>
-                    <li><a href="#">Guide</a></li>
-                    <li><a href="#">Care Program</a></li>
-                    <li><a href="#">Reservation</a></li>
+                <ul class="nav1">
+                    <li><a href="sub.html">Story
+                        <p>온실 이야기</p>
+                    </a></li>
+                    <li><a href="#">Archiv
+                        <p>온실 아카이브</p>
+                    </a></li>
+                    <li><a href="#">Guide
+                        <p>이용안내</p>
+                    </a></li>
+                    <li><a href="#">Care Program
+                        <p>케어 프로그램</p>
+                    </a></li>
+                    <li><a href="#">Reservation
+                        <p>예약하기</p>
+                    </a></li>
                 </ul>
             </nav>
             <div class="r_box">
-                <input type="search" value="search" class="search_box">
+                <div class="search">
+                    <input type="text" placeholder="SEARCH" class="input">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png" class="img">
+                </div>
                 <div class="reservation"></div>
                 <div class="login"></div>
+                <div class="ham_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </header>
         <!-- main img -->
-        <section id="main_img"></section>
+        <section id="main_img">
+            <div class="view">
+                <ul class="list">
+                    <li><img src="./image/mainimg1.png" alt="main_img1"></li>
+                    <li><img src="./image/mainimg2.png" alt="main_img2"></li>
+                    <li><img src="./image/mainimg3.png" alt="main_img3"></li>
+                    <li><img src="./image/mainimg4.png" alt="main_img4"></li>
+                </ul>
+            </div>
+                <ul class="main_btn">
+                    <li><a href="#" class="on">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                </ul>
+            </div>
+            <div class="main_btn2">
+                <span class="arrow-prev"></span>
+                <span class="arrow-next"></span>
+            </div>
+        </section>
         <!--onsil archive  -->
         <section id="onsil_archive">
             <div class="archive_in">
-                <header><h2>ONSIL ARCHIVE</h2></header>
+                <h2>ONSIL ARCHIVE</h2>
                 <ul class="img_box">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li><img src="./image/arch_img1.jpg" alt="arch_img1"></li>
+                    <li><img src="./image/arch_img2.png" alt="arch_img2"></li>
+                    <li><img src="./image/arch_img3.jpg" alt="arch_img3"></li>
+                    <li><img src="./image/arch_img4.jpg" alt="arch_img4"></li>
+                    <li><img src="./image/arch_img5.jpg" alt="arch_img5"></li>
+                    <li><img src="./image/arch_img6.jpg" alt="arch_img6"></li>
+                    <li><img src="./image/arch_img7.jpg" alt="arch_img7"></li>
+                    <li><img src="./image/arch_img8.jpg" alt="arch_img8"></li>
                 </ul>
+                <div class="more_view">
+                    <ul>
+                        <li><img src="./image/arch_img9.jpg" alt="arch_img9"></li>
+                        <li><img src="./image/arch_img10.jpg" alt="arch_img10"></li>
+                        <li><img src="./image/arch_img11.jpg" alt="arch_img11"></li>
+                        <li><img src="./image/arch_img12.jpg" alt="arch_img12"></li>
+                    </ul>
+                </div>
                 <div class="btn1"><a href="#">more</a></div>
             </div>
         </section>
         <!-- mindfulness -->
         <section id="mindfulness">
             <div class="mindfulness_in">
-                <header><h2>MINDFULNESS</h2></header>
+                <h2>MINDFULNESS</h2>
+                <div class="txt_box">
+                    <h4>사진온도 - 마음챙김</h4>
+                    <p>
+                        ‘사진온도’는 사진을 통한 마음챙김 프로그램입니다. 본인과 마주한 <br>
+                        시간이 담긴 사진을 화초를 보살피듯 매일 눈길을 주고, 자신을 잘 돌보는 <br>
+                         것에서부터 시작합니다.
+                        <br><br><br>
+                        당신에게 적당한 온도와 습도를 스스로 찾을 수 있도록 사진 심리 전문가 <br>
+                        가 케어합니다. ‘개인경관’으로 바라보고 스스로 촬영한 우리의 모습에는 <br>
+                        마음의 온도가 담겨 있습니다.</p>
+                </div>
+                <div class="img_box">
+                    <img src="./image/mind_img1.png" alt="mind_img1" class="img1">
+                    <img src="./image/mind_img2.png" alt="mind_img1" class="img2">
+                </div>
             </div>
         </section>
         <!--gallery -->
         <section id="gallery">
-            <header><h2>GALLERY + BOOK STORE</h2></header>
-            <div class="img"></div>
+            <div class="gallery_in">
+            <h2>GALLERY + BOOK STORE</h2>
+            <div class="gallery_img">
+                <div class="top_con">
+                    <div class="top_con_top">
+                        <img src="./image/gallery_img1.jpg" alt="allery_img1">
+                    </div>
+                </div>
+                <div class="gallery_box">
+                <a href="#">소중한 사람과 기억에 남을 소중한 지금을 사진으로 남겨놓으세요</a>
+                </div>
+            </div>
         </section>
         <!-- location -->
         <section id="location">
-            <div class="location_in">
-                <header><h2>LOCATION</h2></header>
+                <h2>LOCATION</h2>
                 <div class="loca_box">
                     <div class="map">
-                       
+                       <img src="./image/map_img.jpg" alt="map_img">
                     </div>
                     <div class="traffic">
-
+                        <h4>" 7호선 논현역 4번 출구에서 100m "</h4>
+                        <div class="traf_box1">
+                            <div><p class="tt">지하철 이용 시</p><p class="td">7호선 논현역 4번출구 보도 100m, 1분 소요</p></div>                        
+                            <div><p class="tt tt2">버스 이용 시</p><p class="td3">논현사거리.논현역4번 출구 (보도 10m)<br>
+                                간선 버스 : 142, 48, 360, 401, 452, 640
+                                <br>지선 버스 : 3414, 44212, 6411, 9408
+                                <br>광역 버스 : 9408</p></div>
+                            <div><p class="tt tt3">주차안내(유료)</p><p class="td">애플리케이션 '모두의 주차장'을 통해 <br>
+                                공유 및 제휴 주변 유료 주차장 이용 바랍니다</p></div> 
+                        </div>
+                        <div class="traf_box2">
+                            <div><img src="./image/location.png" alt="location-img"><p class="td1">서울특별시 서초구 사평대로55길 149</p></div>
+                            <div><img src="./image/call.png" alt="call-img"><p class="td1">02-6083-4257</p></div>    
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
         <!-- footer -->
         <footer id="footer">
@@ -96,28 +184,29 @@
                     <h3>certification</h3>
                     <ul>
                         <li>
-                            <div class="box1"></div>
+                            <div class=" box box1"><img src="./image/certi_img1.png" alt="certi-img1"></div>
                             <p>벤처기업</p>
                         </li>
                         <li>
-                            <div class="box2"></div>
+                            <div class="box box2"><img src="./image/certi_img2.png" alt="certi-img2"></div>
                             <p>특허등록</p>
                         </li>
                         <li>
-                            <div class="box3"></div>
+                            <div class="box box3"><img src="./image/certi_img3.png" alt="certi-img3"></div>
                             <p>PCT출원</p>
                         </li>
-                        <div class="box4"></div>
-                        <p> iF DESIGN <br>
-                            AWARD 2021</p>
+                        <li>
+                        <div class="box4"><img src="./image/certi_img4.png" alt="certi-img4"></div>
+                        <p> iF DESIGN <br> AWARD 2021</p>
+                        </li>
                     </ul>
                 </div>
             </div>
             <div class="foot">
                 <div class="foot_in">
-                    <p>Copyright © 2019 사진온실 Inc.</p>
-                    <p>개인정보처리방침</p>
-                    <p>이용약관</p>
+                    <p class="txt1">Copyright © 2019 사진온실 Inc.</p>
+                    <p class="txt2">개인정보처리방침</p>
+                    <p class="txt3">이용약관</p>
                 </div>
             </div>
         </footer>
